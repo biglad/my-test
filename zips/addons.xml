@@ -1,5 +1,41 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
+<addon id="catchuptvandmore.kodi.beta" name="Catch-up TV &amp; More's Beta repository" version="0.0.6" provider-name="SylvainCecchetto, wwark, joaopa">
+  <requires>
+    <import addon="xbmc.addon" version="17.0.0"/>
+  </requires>
+  <extension point="xbmc.addon.repository" name="Catch-up TV &amp; More's Beta repository">
+    <dir>
+      <info compressed="false">https://raw.github.com/Catch-up-TV-and-More/repository.catchuptvandmore/master/addons_xmls/beta/addons.xml</info>
+      <checksum>https://raw.github.com/Catch-up-TV-and-More/repository.catchuptvandmore/master/addons_xmls/beta/addons.xml.md5</checksum>
+      <datadir zip="true">https://raw.github.com/Catch-up-TV-and-More/repository.catchuptvandmore/master/zips/beta</datadir>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Install Add-ons from Catch-up TV &amp; More repository</summary>
+    <description>Download and install Catch-up TV &amp; More add-on in its latest official version from the official developers repository. As soon as a new beta version is published on the GitHub repository of Catch-up TV &amp; More, this version is available in this repository.</description>
+    <platform>all</platform>
+    <website>https://catch-up-tv-and-more.github.io/</website>
+  </extension>
+</addon>
+
+<addon id="catchuptvandmore.kodi.release" name="Catch-up TV &amp; More's Release repository" version="0.0.6" provider-name="SylvainCecchetto, wwark">
+  <requires>
+    <import addon="xbmc.addon" version="17.0.0"/>
+  </requires>
+  <extension point="xbmc.addon.repository" name="Catch-up TV &amp; More's Release repository">
+    <info compressed="false">https://raw.github.com/Catch-up-TV-and-More/repository.catchuptvandmore/master/addons_xmls/release/addons.xml</info>
+    <checksum>https://raw.github.com/Catch-up-TV-and-More/repository.catchuptvandmore/master/addons_xmls/release/addons.xml.md5</checksum>
+    <datadir zip="true">https://raw.github.com/Catch-up-TV-and-More/repository.catchuptvandmore/master/zips/release</datadir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Install Add-ons from Catch-up TV &amp; More repository</summary>
+    <description>Download and install Catch-up TV &amp; More add-on in its latest official version from the official developers repository. As soon as a new release version is published on the GitHub repository of Catch-up TV &amp; More, this version is available in this repository.</description>
+    <platform>all</platform>
+    <website>https://catch-up-tv-and-more.github.io/</website>
+  </extension>
+</addon>
+
 <addon id="plugin.audio.mp3streams" name="MP3 Streams" version="2022.0.2" provider-name="Jon Bovi">
     <requires>
         <import addon="xbmc.python" version="3.0.0"/>
@@ -23,6 +59,155 @@
     </extension>
 </addon>
 
+<addon id="plugin.audio.tuneinradio" name="[COLOR aqua]TuneIn Radio K19[/COLOR]" version="4.0.2" provider-name="joaconigro">
+	<requires>
+		<import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.module.simplejson" version="3.17.0"/>
+		<!-- <import addon="script.module.web-pdb" /> -->
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="addon.py">
+		<provides>audio</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+        <language>en es</language>
+        <platform>all</platform>
+        <forum></forum>
+        <website>https://github.com/joaconigro/plugin.audio.tuneinradio</website>
+        <email>joaquinnigro@gmail.com</email>
+		<summary lang="en_GB">TuneIn Radio</summary>
+		<summary lang="es_ES">TuneIn Radio</summary>
+		<description lang="en_GB">TuneIn Radio is a free service that lets you listen to anything in the world from wherever you are. Whether you want to hear music, sports, news or current events. TuneIn Radio offers over 50,000 stations for you to choose from. From finding local stations to discovering new stations from around the world, TuneIn Radio brings you to where you want to be.</description>
+		<description lang="es_ES">TuneIn Radio es un servicio gratuito que te permite escuchar cualquier cosa del mundo desde donde te encuentres. Si deseas escuchar música, deportes, noticias o eventos actuales. TuneIn Radio ofrece más de 50,000 estaciones radiales para escoger, desde estaciones locales hasta descubrir nuevas estaciones alrededor del mundo, TuneIn Radio te lleva a donde tu quieras estar.</description>
+		<license>MIT</license>
+		<website>https://github.com/joaconigro/plugin.audio.tuneinradio</website>
+		<source>https://github.com/joaconigro/plugin.audio.tuneinradio</source>
+		<assets>
+        	<icon>icon.png</icon>
+        	<fanart>fanart.jpg</fanart>
+    	</assets>
+	</extension>
+</addon>
+
+<addon id="plugin.program.super.favourites" name="Super Favourites" version="2.2.6" provider-name="jmooremcc, spoyser">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0" />
+    <import addon="script.module.metahandler" optional="true" />
+  </requires>
+
+
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video audio image executable</provides>
+  </extension>
+
+
+  <extension point="xbmc.service" library="service.py" start="startup" />
+
+
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_GB">Put all your favourites bits of all your favourites addons into one easy to use addon.</summary>
+    <summary lang="es_ES">Ponga todas sus partes favoritas de todos sus complementos favoritos en un complemento fácil de usar.</summary>
+    <description lang="en_GB">Super Favourites is a better way of managing your Kodi Favourites.[CR][CR]Virtually any menu item within Kodi can be added to Super Favourites, even from addons that don't normally provide this feature.[CR][CR]Super Favourites allows you to better manage your Kodi favourites, including the creation of sub-folders, into which your Kodi favourites can then be copied or moved into.[CR][CR]This allows you to create you own custom addon with just the best bits of your favourite addons. Search your favourite addons, play your favourite music, read your favourite comic strips, select your favourite playlists, browse your favourite movies, listen to your favourite radio stations, watch your favourite cartoons, the possibilities are endless, all from within one easy to use addon.</description>
+    <description lang="es_ES">Super Favoritos es la mejor forma de administrar sus favoritos de Kodi.[CR][CR]Prácticamente cualquier elemento de menú dentro de Kodi se puede agregar a Súper favoritos, incluso desde complementos que normalmente no brindan esta función.[CR][CR]Super Favoritos le permite administrar mejor sus favoritos de Kodi, incluída la creación de subcarpetas, en las que puede copiar o mover sus secciones o addons preferidos.[CR][CR]Esto le permite crear su propio complemento personalizado con lo mejor. Busque sus addons preferidos, reproduzca su música favorita, lea sus historias favoritas, seleccione sus listas de reproducción, explore sus películas, escuche sus estaciones de radio, vea sus dibujos animados, las posibilidades son infinitas, todos sus favoritos desde un solo uso addon, fácil de añadir.</description>
+    <platform>all</platform>
+    <language>en es</language>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>http://forum.xbmc.org/showthread.php?tid=192662</forum>
+    <website />
+    <source>https://github.com/spoyser/spoyser-repo/tree/master/plugin.program.super.favourites</source>
+    <source>https://github.com/jmooremcc/plugin.program.super.favourites</source>
+    <email>seanpoyser at gmail.com</email>
+    <email>jmooremcc at hotmail.com</email>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+
+    <news>
+2.2.6 April 2022
+      - Fix context menu settings bug
+      - Fix more issues with activateWindowCommand
+
+2.2.5 February 2022
+      - Generic Fix for activateWindowCommand
+
+2.2.4 February 2022
+      - Fix URL Playback
+
+2.2.3 February 2022
+      - Fix folder lock
+      - Fix name colorization
+
+2.2.1 February 2022
+      - Minor Bug Fix
+
+2.2.0 December 2021
+      - Fixed Play From Here functionality
+      - Fixed handling of local folders so that back button now works correctly
+      - Added threading decorator to utils
+
+2.1.0: 9 October 2021
+      - Added Spanish Translation contributed by populc
+      - Fixed issue in player module
+
+2.0.11: 26 August 2021
+      - Fixed bug in download module that prevented videos from being downloaded
+
+2.0.10: 6 June 2021
+      - Fixed bug that prevented Hebrew language for working
+
+2.0.9: 15 May 2021
+      - Fixed bug in Player.def activateWindowCommand(cmd) that was messing up the ability
+        to return from child direrctories
+
+2.0.8: 14 May 2021
+      - Fixed various incompatibilities with latest version of Matrix involving decode('utf-8')
+        that caused crashes.
+
+2.0.7: 17 February 2021
+    - Fixed remote folder access via another plugin
+
+2.0.6: 11 January 2021
+      - Fixed access to local folders and smb folders
+
+2.0.5: 12 December 2020
+      - More Fixes for Network Folder Failure to Launch
+
+2.0.0: 29 November 2020
+      - Matrix Version
+
+1.0.60: 1 November 2020
+    - Fixed launch issues in Kodi Leia
+
+1.0.59: 29th May 2017
+    - 'Now playing' text now defined by SF due to skin variations
+    </news>
+
+  </extension>
+
+
+  <extension point="kodi.context.item">
+    <menu id="kodi.core.main">
+
+      <item library="capture.py">
+        <label>$ADDON[plugin.program.super.favourites 30002]</label>
+        <visible>String.IsEqual(Window(Home).Property(SF_STD_CONTEXTMENU_ENABLED),True) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
+      </item>
+
+      <item library="menu_addtofaves.py">
+        <label>$ADDON[plugin.program.super.favourites 30047]</label>
+        <visible>String.IsEqual(Window(Home).Property(SF_STD_ADDTOFAVES_ENABLED),True) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
+      </item>
+
+      <item library="menu_download.py">
+        <label>$ADDON[plugin.program.super.favourites 30259]</label>
+        <visible>String.IsEqual(Window(Home).Property(SF_STD_DOWNLOAD_ENABLED),True) + Player.IsInternetStream</visible>
+      </item>
+
+    </menu>
+  </extension>
+
+</addon>
+
 <addon id="repository.biglad" name="Biglads Repos1" version="0.0.2" provider-name="Biglad">
 	<extension point="xbmc.addon.repository" name="Biglads Repos1">
 		<dir>
@@ -41,5 +226,558 @@
         <fanart>fanart.jpg</fanart>
     </assets>
 	</extension>
+</addon>
+
+<addon id="repository.slyguy" name="SlyGuy Repository (slyguy.uk)" provider-name="SlyGuy" version="0.0.8">
+  <extension point="xbmc.addon.repository" name="SlyGuy Repository (slyguy.uk)">
+    <dir>
+      <info compressed="false">https://slyguy.uk/.repo/addons.xml</info>
+      <checksum>https://slyguy.uk/.repo/addons.xml.md5</checksum>
+      <datadir zip="true">https://slyguy.uk/.repo/</datadir>
+    </dir>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <description lang="en">Addons by SlyGuy (slyguy.uk)</description>
+    <license></license>
+    <language></language>
+    <website></website>
+    <news></news>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.biglad.cbsreality"
+  name="#Biglad CBS Reality#"
+  version="2.4"
+  provider-name="Biglad">
+      <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" />
+        <import addon="script.module.inputstreamhelper" />
+        <import addon="script.module.six"/>
+		<import addon="inputstream.adaptive"/>
+		<import addon="script.module.codequick"/>
+    </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">VistaTV Menu System</summary>
+    <description lang="en">VistaTV Menu System</description>
+	<disclaimer>VistaTV Menu System</disclaimer>
+	  <assets>
+          <icon>icon.png</icon>
+          <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.biglad.freeform"
+  name="#Biglad FreeForm#"
+  version="2.4"
+  provider-name="Biglad">
+      <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" />
+        <import addon="script.module.inputstreamhelper" />
+        <import addon="script.module.six"/>
+		<import addon="inputstream.adaptive"/>
+		<import addon="script.module.codequick"/>
+    </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">VistaTV Menu System</summary>
+    <description lang="en">VistaTV Menu System</description>
+	<disclaimer>VistaTV Menu System</disclaimer>
+	  <assets>
+          <icon>icon.png</icon>
+          <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.biglad.fxx"
+  name="#Biglad FXX"
+  version="2.4"
+  provider-name="EPTV">
+      <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" />
+        <import addon="script.module.inputstreamhelper" />
+        <import addon="script.module.six"/>
+    </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">VistaTV Menu System</summary>
+    <description lang="en">VistaTV Menu System</description>
+	<disclaimer>VistaTV Menu System</disclaimer>
+	  <assets>
+          <icon>icon.png</icon>
+          <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.biglad.livetv"
+  name="#Live TV#"
+  version="2.4"
+  provider-name="EPTV">
+      <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" />
+        <import addon="script.module.inputstreamhelper" />
+        <import addon="script.module.six"/>
+		<import addon="inputstream.adaptive"/>
+		<import addon="script.module.codequick"/>
+    </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">VistaTV Menu System</summary>
+    <description lang="en">VistaTV Menu System</description>
+	<disclaimer>VistaTV Menu System</disclaimer>
+	  <assets>
+          <icon>icon.png</icon>
+          <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.biglad.movies"
+  name="#Biglad Movies#"
+  version="2.4"
+  provider-name="Biglad">
+      <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" />
+        <import addon="script.module.inputstreamhelper" />
+        <import addon="script.module.six"/>
+		<import addon="inputstream.adaptive"/>
+		<import addon="script.module.codequick"/>
+    </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">VistaTV Menu System</summary>
+    <description lang="en">VistaTV Menu System</description>
+	<disclaimer>VistaTV Menu System</disclaimer>
+	  <assets>
+          <icon>icon.png</icon>
+          <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.biglad.MTV-MusicUK"
+  name="#Biglad MTV Music UK"
+  version="2.4"
+  provider-name="Biglad">
+      <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" />
+        <import addon="script.module.inputstreamhelper" />
+        <import addon="script.module.six"/>
+		<import addon="inputstream.adaptive"/>
+		<import addon="script.module.codequick"/>
+    </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">VistaTV Menu System</summary>
+    <description lang="en">VistaTV Menu System</description>
+	<disclaimer>VistaTV Menu System</disclaimer>
+	  <assets>
+          <icon>icon.png</icon>
+          <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.biglad.skyone-showcase"
+  name="#Biglad Sky One - Showcase"
+  version="2.4"
+  provider-name="EPTV">
+      <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" />
+        <import addon="script.module.inputstreamhelper" />
+        <import addon="script.module.six"/>
+    </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">VistaTV Menu System</summary>
+    <description lang="en">VistaTV Menu System</description>
+	<disclaimer>VistaTV Menu System</disclaimer>
+	  <assets>
+          <icon>icon.png</icon>
+          <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.biglad.TVLand"
+  name="#Biglad TV Land#"
+  version="2.4"
+  provider-name="Biglad">
+      <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" />
+        <import addon="script.module.inputstreamhelper" />
+        <import addon="script.module.six"/>
+		<import addon="inputstream.adaptive"/>
+		<import addon="script.module.codequick"/>
+    </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">VistaTV Menu System</summary>
+    <description lang="en">VistaTV Menu System</description>
+	<disclaimer>VistaTV Menu System</disclaimer>
+	  <assets>
+          <icon>icon.png</icon>
+          <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.biglad.tvshows"
+  name="#Biglad TV Shows#"
+  version="2.4"
+  provider-name="Biglad">
+      <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" />
+        <import addon="script.module.inputstreamhelper" />
+        <import addon="script.module.six"/>
+		<import addon="inputstream.adaptive"/>
+		<import addon="script.module.codequick"/>
+    </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">VistaTV Menu System</summary>
+    <description lang="en">VistaTV Menu System</description>
+	<disclaimer>VistaTV Menu System</disclaimer>
+	  <assets>
+          <icon>icon.png</icon>
+          <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.biglad.vh1us"
+  name="#Biglad VH1 US#"
+  version="2.4"
+  provider-name="Biglad">
+      <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" />
+        <import addon="script.module.inputstreamhelper" />
+        <import addon="script.module.six"/>
+		<import addon="inputstream.adaptive"/>
+		<import addon="script.module.codequick"/>
+    </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">VistaTV Menu System</summary>
+    <description lang="en">VistaTV Menu System</description>
+	<disclaimer>VistaTV Menu System</disclaimer>
+	  <assets>
+          <icon>icon.png</icon>
+          <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.eptv.adultswim"
+  name="#Biglad Adult Swim"
+  version="2.4"
+  provider-name="EPTV">
+      <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" />
+        <import addon="script.module.inputstreamhelper" />
+        <import addon="script.module.six"/>
+    </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">VistaTV Menu System</summary>
+    <description lang="en">VistaTV Menu System</description>
+	<disclaimer>VistaTV Menu System</disclaimer>
+	  <assets>
+          <icon>icon.png</icon>
+          <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.eptv.bbcamerica"
+  name="#Biglad BBC America"
+  version="2.4"
+  provider-name="EPTV">
+      <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" />
+        <import addon="script.module.inputstreamhelper" />
+        <import addon="script.module.six"/>
+    </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">VistaTV Menu System</summary>
+    <description lang="en">VistaTV Menu System</description>
+	<disclaimer>VistaTV Menu System</disclaimer>
+	  <assets>
+          <icon>icon.png</icon>
+          <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.eptv.clubland"
+  name="#Biglad Clubland TV"
+  version="2.4"
+  provider-name="EPTV">
+      <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" />
+        <import addon="script.module.inputstreamhelper" />
+        <import addon="script.module.six"/>
+    </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">VistaTV Menu System</summary>
+    <description lang="en">VistaTV Menu System</description>
+	<disclaimer>VistaTV Menu System</disclaimer>
+	  <assets>
+          <icon>icon.png</icon>
+          <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.eptv.comedycentralusa"
+  name="#Biglad Comedy Central USA"
+  version="2.4"
+  provider-name="EPTV">
+      <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" />
+        <import addon="script.module.inputstreamhelper" />
+        <import addon="script.module.six"/>
+    </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">VistaTV Menu System</summary>
+    <description lang="en">VistaTV Menu System</description>
+	<disclaimer>VistaTV Menu System</disclaimer>
+	  <assets>
+          <icon>icon.png</icon>
+          <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.eptv.ctvscifi"
+  name="#Biglad CTV Sci-Fi"
+  version="2.4"
+  provider-name="EPTV">
+      <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" />
+        <import addon="script.module.inputstreamhelper" />
+        <import addon="script.module.six"/>
+    </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">VistaTV Menu System</summary>
+    <description lang="en">VistaTV Menu System</description>
+	<disclaimer>VistaTV Menu System</disclaimer>
+	  <assets>
+          <icon>icon.png</icon>
+          <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.eptv.exit"
+  name="EyePeaTV Exit"
+  version="2.4"
+  provider-name="EPTV">
+  <requires>
+    <import addon="xbmc.python" version="3.0.0"/>
+  </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">VistaTV Menu System</summary>
+    <description lang="en">VistaTV Menu System</description>
+	<disclaimer>VistaTV Menu System</disclaimer>
+  </extension>
+</addon>
+
+<addon id="script.eptv.horrorextra"
+  name="#Biglad Horror Channel"
+  version="2.4"
+  provider-name="EPTV">
+      <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" />
+        <import addon="script.module.inputstreamhelper" />
+        <import addon="script.module.six"/>
+    </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">VistaTV Menu System</summary>
+    <description lang="en">VistaTV Menu System</description>
+	<disclaimer>VistaTV Menu System</disclaimer>
+	  <assets>
+          <icon>icon.png</icon>
+          <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.eptv.syfyus"
+  name="#Biglad SyFy USA"
+  version="2.4"
+  provider-name="EPTV">
+      <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+        <import addon="script.module.requests" />
+        <import addon="script.module.inputstreamhelper" />
+        <import addon="script.module.six"/>
+    </requires>
+  <extension point="xbmc.python.script" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">VistaTV Menu System</summary>
+    <description lang="en">VistaTV Menu System</description>
+	<disclaimer>VistaTV Menu System</disclaimer>
+	  <assets>
+          <icon>icon.png</icon>
+          <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
+<addon id="script.ezmaintenanceplus" name="EZ Maintenance+" version="2023.01.09.0" provider-name="aenema, peno">
+  <requires>
+    <import addon="script.module.requests" version="1.0.0" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+     <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+	<summary>A Streamlined Utility Tool for Kodi</summary>
+	<description>No Bloatware, no Nonsense! Just Keep your Kodi sharp and clean with this utility tool... Now with a Custom Wizard.</description>
+    <language></language>
+    <platform>all</platform>
+    <license>The MIT License</license>
+    <forum>-</forum>
+    <source>https://github.com</source>
+    <assets>
+	    <icon>icon.png</icon>
+	    <fanart>fanart.png</fanart>
+    </assets>
+    <news>
+2023.01.09.0
+ - Added AutoClean Cache functionality every x days at a given hour.
+ - Backup always replaced the home folder reference in xml files with special://home
+   Not all addons can handle this replace so it is now possible via a setting to disable this.
+ - Backup Cancel didn't work. This is now fixed.
+
+2023.01.01.0
+ - Fix a fix on 2022.12.28.0
+
+2022.12.28.0
+ - Fix crash with full backup when there are foreign, like Hebrew, characters in xml files
+
+2021.12.19.0
+ - Made kodi 19 (Matrix) compatible.
+
+2021.11.03.0
+- Fix Speedtest crash.
+
+2020.12.19.1
+- The plugin was also installed under Video add-ons. Now it only is in Program add-ons where it belongs
+- Clean removed some files created by Common plugin cache or StorageServer or script.common.plugin.cache at kodi startup.
+  This resulted in breaking cache functionality of kodi
+- Upload kodi log file to pastebin didn't always work and the first bytes were binary characters
+- Made all decode calls UTF-8
+- Improved ADVANCED SETTINGS(BUFFER SIZE) functionality
+    </news>
+  </extension>
+</addon>
+
+<addon id="script.module.slyguy" name="SlyGuy Common" provider-name="SlyGuy" version="0.74.2">
+  <requires>
+    <import addon="slyguy.dependencies" version="0.0.8"/>
+    <import addon="repository.slyguy" version="0.0.4"/>
+  </requires>
+  <extension point="xbmc.service" library="service.py" start="login" />
+  <extension point="xbmc.python.pluginsource" library="default.py" />
+  <extension point="xbmc.python.module" library="resources/modules" />
+  <extension point="xbmc.addon.metadata">
+    <description lang="en">Common code required by all Slyguy add-ons</description>
+    <reuselanguageinvoker>true</reuselanguageinvoker>
+    <license></license>
+    <language></language>
+    <website></website>
+    <news></news>
+    <assets>
+      <icon>icon.png</icon>
+      <fanart>fanart.jpg</fanart>
+    </assets>
+  </extension>
 </addon>
 </addons>
