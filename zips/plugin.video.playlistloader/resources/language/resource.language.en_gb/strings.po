@@ -1,0 +1,201 @@
+# Kodi Media Center language file
+# Addon Name: Playlist Loader
+# Addon id: plugin.video.playlistloader
+
+msgid ""
+msgid ""
+
+"Last-Translator: Publish3r\n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgctxt "#30000"
+msgid "Settings"
+msgid ""
+
+msgctxt "#30001"
+msgid "Add a New List"
+msgid ""
+
+msgctxt "#30002"
+msgid "Select Playlist"
+msgid ""
+
+msgctxt "#30003"
+msgid "Favorites"
+msgid ""
+
+msgctxt "#30004"
+msgid "List Name"
+msgid ""
+
+msgctxt "#30005"
+msgid "List URL"
+msgid ""
+
+msgctxt "#30006"
+msgid "Choose List"
+msgid ""
+
+msgctxt "#30007"
+msgid "Has the same address"
+msgid ""
+
+msgctxt "#30008"
+msgid "Remove Playlist"
+msgid ""
+
+msgctxt "#30009"
+msgid "Add to VikingsPro Favorites"
+msgid ""
+
+msgctxt "#30010"
+msgid "Remove from VikingsPro Favorites"
+msgid ""
+
+msgctxt "#30011"
+msgid "Already in Favorites"
+msgid ""
+
+msgctxt "#30012"
+msgid "Added to Favorites"
+msgid ""
+
+msgctxt "#30013"
+msgid "Add a New Channel"
+msgid ""
+
+msgctxt "#30014"
+msgid "Channel Name"
+msgid ""
+
+msgctxt "#30015"
+msgid "Channel URL"
+msgid ""
+
+msgctxt "#30016"
+msgid "Remote List (URL)"
+msgid ""
+
+msgctxt "#30017"
+msgid "Local List (File)"
+msgid ""
+
+msgctxt "#30018"
+msgid "Select Channel Logo Font"
+msgid ""
+
+msgctxt "#30019"
+msgid "Channel Logo Base URL"
+msgid ""
+
+msgctxt "#30020"
+msgid "Channel Logo Folder"
+msgid ""
+
+msgctxt "#30021"
+msgid "None"
+msgid ""
+
+msgctxt "#30022"
+msgid "Choose Logo from List"
+msgid ""
+
+msgctxt "#30023"
+msgid "Choose Channel Logo"
+msgid ""
+
+msgctxt "#30024"
+msgid "Logo URL"
+msgid ""
+
+msgctxt "#30025"
+msgid "Logo File"
+msgid ""
+
+msgctxt "#30026"
+msgid "Rename"
+msgid ""
+
+msgctxt "#30027"
+msgid "Change Font"
+msgid ""
+
+msgctxt "#30028"
+msgid "Change Logo"
+msgid ""
+
+msgctxt "#30029"
+msgid "Change Channel Logo Font"
+msgid ""
+
+msgctxt "#30030"
+msgid "Move Up"
+msgid ""
+
+msgctxt "#30031"
+msgid "Move Down"
+msgid ""
+
+msgctxt "#30032"
+msgid "Move to"
+msgid ""
+
+msgctxt "#30033"
+msgid "Select a New Location"
+msgid ""
+
+msgctxt "#30034"
+msgid "Select Minutes to Store List to Disk"
+msgid ""
+
+msgctxt "#30035"
+msgid "Change List Caching Time"
+msgid ""
+
+msgctxt "#30036"
+msgid "Show Channel List Groups"
+msgid ""
+
+msgctxt "#30037"
+msgid "Yes"
+msgid ""
+
+msgctxt "#30038"
+msgid "No"
+msgid ""
+
+msgctxt "#30039"
+msgid "Click to Change"
+msgid ""
+
+msgctxt "#30040"
+msgid "Add New Folder"
+msgid ""
+
+msgctxt "#30041"
+msgid "Add to Existing Directory"
+msgid ""
+
+msgctxt "#30042"
+msgid "Select an Icon for This Directory (Optional)"
+msgid ""
+
+msgctxt "#30043"
+msgid "Delete from Directory Contents"
+msgid ""
+
+msgctxt "#30044"
+msgid "Delete Directory and Move Contents from Root"
+msgid ""
+
+msgctxt "#30101"
+msgid "Delete Playlist Files"
+msgid ""
+
+msgctxt "#30102"
+msgid "Delete from Favorites"
+msgid ""

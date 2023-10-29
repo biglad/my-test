@@ -14,6 +14,10 @@
 		<import addon="plugin.video.daddylive"/>
 		<import addon="plugin.video.playlistloader"/>
 		<import addon="plugin.video.tvone"/>
+		<import addon="plugin.video.tvone11"/>
+		<import addon="plugin.video.tvone111"/>
+		<import addon="plugin.video.tvone112"/>
+		<import addon="plugin.video.tvone1112"/>
     </requires>
   <extension point="xbmc.python.script" library="addon.py">
     <provides>video</provides>
