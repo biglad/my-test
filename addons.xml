@@ -251,6 +251,31 @@ In addition to what livestreams allowed you to do, you can now,
     </extension>
 </addon>
 
+<addon id="plugin.video.taptv"
+       name="TapTv"
+       version="22.4.26"
+       provider-name="[COLORpurple]• [COLORorchid]Tech [COLORdarkorchid]E [COLORplum]Coyote [COLORpurple]•[/COLOR]">
+  <requires>
+    <import addon="script.module.pycryptodome" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.kodi-six" />
+    <import addon="script.module.future" />
+    <import addon="script.module.routing" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="addon.py">
+    <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+  <summary lang="en">TapTv</summary>
+  <description lang="en_GB">TapTv</description>
+  <disclaimer lang="en_GB">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content.</disclaimer>
+  <assets>
+	<icon>icon.png</icon>
+	<fanart>fanart.jpg</fanart>
+  </assets>
+</extension>
+</addon>
+
 <addon id="repository.biglad" name="Biglads Repo" version="0.0.3" provider-name="Biglad">
 	<extension point="xbmc.addon.repository" name="Biglads Repo">
 		<dir>
@@ -642,6 +667,8 @@ In addition to what livestreams allowed you to do, you can now,
         <import addon="script.module.six"/>
 		<import addon="plugin.video.live.streamspro"/>
 		<import addon="plugin.video.thetvapp"/>
+		<import addon="plugin.video.daddylive"/>
+		<import addon="plugin.video.playlistloader"/>
     </requires>
   <extension point="xbmc.python.script" library="addon.py">
     <provides>video</provides>
