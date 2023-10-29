@@ -4,12 +4,14 @@
        name="Biglad Repo"
        version="1.0.0"
        provider-name="[COLORpurple]• [COLORorchid]Big [COLORdarkorchid]l [COLORplum]ad[COLORpurple] •[/COLOR]">
+	   <requires>
+			<import addon="xbmc.addon" version="12.0.0"/>
+       </requires>
     <extension point="xbmc.addon.repository" name="Biglad Repo">
-        <dir minversion="18.9.0">
             <info compressed="false">https://raw.githubusercontent.com/biglad/my-test/main/zips/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/biglad/my-test/main/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/biglad/my-test/main/zips/</datadir>
-        </dir>
+			<hashes>false</hashes>
     </extension>
     <extension point="xbmc.addon.metadata">
         <summary>Biglad Repository</summary>
