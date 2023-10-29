@@ -5,9 +5,12 @@
   provider-name="EPTV">
       <requires>
         <import addon="xbmc.python" version="3.0.0"/>
+		<import addon="script.eptv.exit"/>
         <import addon="script.module.requests" />
         <import addon="script.module.inputstreamhelper" />
         <import addon="script.module.six"/>
+		<import addon="plugin.video.live.streamspro"/>
+		<import addon="plugin.video.thetvapp"/>
     </requires>
   <extension point="xbmc.python.script" library="addon.py">
     <provides>video</provides>
