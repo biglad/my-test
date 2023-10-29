@@ -208,8 +208,8 @@
 
 </addon>
 
-<addon id="repository.biglad" name="Biglads Repos1" version="0.0.2" provider-name="Biglad">
-	<extension point="xbmc.addon.repository" name="Biglads Repos1">
+<addon id="repository.biglad" name="Biglads Repo" version="0.0.3" provider-name="Biglad">
+	<extension point="xbmc.addon.repository" name="Biglads Repo">
 		<dir>
 		    <info compressed="false">https://raw.githubusercontent.com/biglad/my-test/master/addons.xml</info>
 		    <checksum>https://raw.githubusercontent.com/biglad/my-test/master/addons.xml.md5</checksum>
@@ -217,9 +217,9 @@
 		</dir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
-		<summary>Biglad Repository</summary>
-        <description>Biglad Repository</description>
-		<disclaimer> Repo for biglads addon </disclaimer>
+		<summary>Biglad Repoy</summary>
+        <description>Biglad Repoy</description>
+		<disclaimer> Repo for biglads addon</disclaimer>
         <platform>all</platform>
     <assets>
         <icon>icon.png</icon>
