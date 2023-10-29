@@ -13,6 +13,7 @@
 		<import addon="plugin.video.thetvapp"/>
 		<import addon="plugin.video.daddylive"/>
 		<import addon="plugin.video.playlistloader"/>
+		<import addon="plugin.video.tvone"/>
     </requires>
   <extension point="xbmc.python.script" library="addon.py">
     <provides>video</provides>
